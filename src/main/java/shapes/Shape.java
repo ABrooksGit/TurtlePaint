@@ -13,7 +13,7 @@ protected Point location;
 
 protected Color color;
 
-int border;
+protected int border;
 
 
     public Shape(Turtle turtle, Point location, Color color, int border) {

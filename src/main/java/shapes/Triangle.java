@@ -30,7 +30,6 @@ public class Triangle extends Shape {
         turtle.goTo(-100,-100);
         turtle.penDown();
         turtle.turnLeft(90);
-        turtle.forward();
         turtle.goTo(0,0);
         turtle.penUp();
         turtle.goTo(-100,-100);

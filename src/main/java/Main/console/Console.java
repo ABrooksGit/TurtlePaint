@@ -1,5 +1,7 @@
 package Main.console;
 
+import java.awt.*;
+import java.lang.reflect.Field;
 import java.time.LocalDate;
 import java.time.format.DateTimeParseException;
 import java.util.Scanner;
@@ -95,6 +97,39 @@ public class Console {
             }
         }
 
+        return result;
+    }
+
+
+    public Color getColor(String colorName) {
+
+            try {
+                Field field = Color.class.getField(colorName.toUpperCase());
+                return (Color) field.get(null);
+            } catch (NoSuchFieldException | IllegalAccessException e) {
+                return null; // Or handle the exception as needed
+            }
+        }
+
+
+
+    public String promptForColor(String prompt){
+        String result = null;
+
+        boolean hasResult = false;
+
+        while(!hasResult){
+                System.out.println(prompt);
+
+            result = scanner.nextLine().trim();
+
+            if(getColor(result) != null){
+                hasResult = true;
+            } else {
+                System.out.println(ColorCodes.RED + "Not a valid Color Name...Please Try Again..." + ColorCodes.RESET);
+            }
+
+        }
         return result;
     }
 }

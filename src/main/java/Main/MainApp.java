@@ -6,9 +6,9 @@ import java.awt.*;
 
 public class MainApp
 {
-    private static  final  World world = new World(200,200);
-    private static final Turtle turtle = new Turtle(world, -100, -100);
-    private static final Point point = new Point(100,100);
+//    private static  final  World world = new World(200,200);
+//    private static final Turtle turtle = new Turtle(world, -100, -100);
+//    private static final Point point = new Point(100,100);
 
 
 
@@ -17,22 +17,27 @@ public class MainApp
 //        X();
 //        square();
 //        triangle();
-//        UserInterface  UI = new UserInterface();
-//
-//        UI.HomeScreen();
-//
+        UserInterface  UI = new UserInterface();
 
+        UI.HomeScreen();
 
-    }
-    public static void X(){
-
-        // Creates an X
-        X x = new X(turtle, point, Color.GREEN, 2);
-        x.paint();
+       // Color.getColor()
 
 
 
     }
+
+//    public static void X(){
+//
+//        // Creates an X
+//        X x = new X(turtle, point, Color.GREEN, 2);
+//        x.paint();
+//
+//
+//
+//    }
+
+
 
 //
 //    public static void circle() {
@@ -43,8 +48,9 @@ public class MainApp
 //        circle.paint();
 //
 //    }
-//
-//
+
+
+
 //    public static void hexagon() {
 //
 //        //Creates a Hexagon
@@ -53,20 +59,22 @@ public class MainApp
 //    }
 //
 //
-    public static void square() {
-        //Creates a Square
+//    public static void square() {
+//        //Creates a Square
+//
+//        Square square = new Square(turtle,point,Color.GREEN,2);
+//        square.paint();
+//    }
 
-        Square square = new Square(turtle,point,Color.GREEN,2);
-        square.paint();
-    }
 
-    public static void triangle() {
 
-        //Creates a Triangle
-
-        Triangle triangle = new Triangle(turtle,point,Color.GREEN,2);
-        triangle.paint();
-    }
-
+//    public static void triangle() {
+//
+//        //Creates a Triangle
+//
+//        Triangle triangle = new Triangle(turtle,point,Color.GREEN,2);
+//        triangle.paint();
+//    }
+//
 
 }

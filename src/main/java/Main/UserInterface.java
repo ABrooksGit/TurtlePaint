@@ -92,7 +92,9 @@ public class UserInterface {
 
     public  void X(){
 
-        Color borderColor = Color.getColor(console.promptForString("What is the border color"));
+        String colorName = console.promptForColor("What is the border color: ");
+        Color borderColor = console.getColor(colorName);
+
         int borderWidth = console.promptForInt("What is the border width?: ");
 
         // Creates an X
@@ -106,7 +108,10 @@ public class UserInterface {
     public  void circle() {
 
         int circleRadius = console.promptForInt("What is the radius?: ");
-        Color borderColor = Color.getColor(console.promptForString("What Color?"));
+
+        String colorName = console.promptForColor("What is the border color: ");
+        Color borderColor = console.getColor(colorName);
+
         int borderWidth = console.promptForInt("What is the border width?: ");
 
         //Creates a Circle
@@ -118,7 +123,9 @@ public class UserInterface {
 
     public void hexagon() {
 
-        Color borderColor = Color.getColor(console.promptForString("What is the border color: "));
+        String colorName = console.promptForColor("What is the border color: ");
+        Color borderColor = console.getColor(colorName);
+
         int borderWidth = console.promptForInt("What is the border width?: ");
 
         //Creates a Hexagon
@@ -128,18 +135,22 @@ public class UserInterface {
 
 
     public void square() {
+        String colorName = console.promptForColor("What is the border color: ");
+        Color borderColor = console.getColor(colorName);
 
-        Color borderColor = Color.getColor(console.promptForString("What is the border color: "));
+//        Color borderColor = Color.getColor(console.promptForString("What is the border color: "));
         int borderWidth = console.promptForInt("What is the border width?: ");
 
         //Creates a Square
-        Square square = new Square(turtle,point,borderColor,borderWidth);
+        Square square = new Square(turtle,point, borderColor,borderWidth);
         square.paint();
     }
 
     public  void triangle() {
 
-        Color borderColor = Color.getColor(console.promptForString("What is the border color: "));
+        String colorName = console.promptForColor("What is the border color: ");
+        Color borderColor = console.getColor(colorName);
+
         int borderWidth = console.promptForInt("What is the border width?: ");
 
         //Creates a Triangle

@@ -22,6 +22,7 @@ public class X extends Shape {
         double heightSquared = Math.pow(height, 2);
         double hypotenuse = Math.sqrt(widthSquared + heightSquared);
 
+
         turtle.setPenWidth(3);
         turtle.setColor(color);
         turtle.turnRight(45);
