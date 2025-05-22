@@ -1,4 +1,4 @@
-package Main.console;
+package console;
 
 public class ColorCodes {
 

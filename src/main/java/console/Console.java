@@ -1,4 +1,4 @@
-package Main.console;
+package console;
 
 import java.awt.*;
 import java.lang.reflect.Field;

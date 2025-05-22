@@ -1,14 +1,15 @@
 package Main;
 
-import Main.console.Console;
+import ShapeFileManager.ShapeFileManager;
+import console.Console;
 import shapes.*;
 
 import java.awt.*;
 
 public class UserInterface {
-    private Console console = new Console();
+    private final Console console = new Console();
 
-    private  final  World world = new World(200,200);
+    private  final  World world = new World(1800,840);
     private final Turtle turtle = new Turtle(world, -100, -100);
     private final Point point = new Point(100,100);
 
@@ -54,6 +55,7 @@ public class UserInterface {
             System.out.println("1.Square");
             System.out.println("2.X");
             System.out.println("3.Triangle");
+            System.out.println("4. Circle");
             addShape = console.promptForInt("Which shape do you want to add: ");
 
 
@@ -144,6 +146,7 @@ public class UserInterface {
         //Creates a Square
         Square square = new Square(turtle,point, borderColor,borderWidth);
         square.paint();
+        ShapeFileManager.saveShape(square);
     }
 
     public  void triangle() {

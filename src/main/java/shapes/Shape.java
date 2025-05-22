@@ -56,4 +56,13 @@ protected int border;
     }
 
     public abstract void paint();
+
+
+    @Override
+    public String toString() {
+        return turtle + "|" + location + "|" + color + "|" + border;
+    }
 }
+
+
+

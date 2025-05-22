@@ -25,6 +25,7 @@ public class X extends Shape {
 
         turtle.setPenWidth(3);
         turtle.setColor(color);
+        turtle.goTo(-100,-100);
         turtle.turnRight(45);
         turtle.forward(hypotenuse);
         turtle.penUp();
